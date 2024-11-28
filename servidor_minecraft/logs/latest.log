@@ -1,0 +1,271 @@
+[28Nov2024 23:22:56.741] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[28Nov2024 23:22:56.749] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.4 by Microsoft; OS Linux arch amd64 version 6.5.0-1025-azure
+[28Nov2024 23:23:06.165] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[28Nov2024 23:23:06.362] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/PANASss/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[28Nov2024 23:23:08.409] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/PANASss/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.20.1-47.2.0/fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[28Nov2024 23:23:08.411] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/PANASss/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.2.0/javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[28Nov2024 23:23:08.412] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/PANASss/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.2.0/lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[28Nov2024 23:23:08.413] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/PANASss/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.20.1-47.2.0/mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[28Nov2024 23:23:11.526] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select two dependency jars from JarJar which have the same identification: Mod File:  and Mod File: . Using Mod File: 
+[28Nov2024 23:23:11.536] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 40 dependencies adding them to mods collection
+[28Nov2024 23:23:12.587] [main/INFO] [org.groovymc.gml.mappings.MappingsProvider/]: Starting runtime mappings setup...
+[28Nov2024 23:23:12.678] [main/INFO] [org.groovymc.gml.internal.locator.ModLocatorInjector/]: Injecting ScriptModLocator candidates...
+[28Nov2024 23:23:12.717] [main/INFO] [org.groovymc.gml.scriptmods.ScriptModLocator/]: Injected Jimfs file system
+[28Nov2024 23:23:12.746] [main/INFO] [org.groovymc.gml.scriptmods.ScriptModLocator/]: Skipped loading script mods from directory /workspaces/PANASss/servidor_minecraft/mods/scripts as it did not exist.
+[28Nov2024 23:23:12.779] [main/INFO] [org.groovymc.gml.internal.locator.ModLocatorInjector/]: Injected ScriptModLocator mod candidates. Found 0 valid mod candidates and 0 broken mod files.
+[28Nov2024 23:23:14.983] [GML Mappings Thread/INFO] [org.groovymc.gml.mappings.MappingsProvider/]: Found version metadata from piston-meta.
+[28Nov2024 23:23:15.011] [GML Mappings Thread/ERROR] [org.groovymc.gml.mappings.MappingsProvider/]: Caught exception while setting up mappings...
+java.lang.NoClassDefFoundError: org/apache/commons/codec/binary/Hex
+	at org.groovymc.gml.mappings.MappingsProvider.checkAndUpdateVersionFile(MappingsProvider.groovy:192) ~[?:?]
+	at org.groovymc.gml.mappings.MappingsProvider.access$1(MappingsProvider.groovy) ~[?:?]
+	at org.groovymc.gml.mappings.MappingsProvider$_startMappingsSetup_closure3.doCall(MappingsProvider.groovy:107) ~[?:?]
+	at org.groovymc.gml.mappings.MappingsProvider$_startMappingsSetup_closure3.call(MappingsProvider.groovy) ~[?:?]
+	at groovy.lang.Closure.run(Closure.java:505) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.codec.binary.Hex
+	at jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:137) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:137) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 6 more
+[28Nov2024 23:23:23.248] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[28Nov2024 23:23:23.306] [main/ERROR] [mixin/]: Mixin config gamemenuremovegfarb-common.mixins.json does not specify "minVersion" property
+[28Nov2024 23:23:24.192] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [com.sonicether.soundphysics.MixinConnector]
+[28Nov2024 23:23:24.204] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[28Nov2024 23:23:24.511] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for corgilib.forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Nov2024 23:23:24.516] [main/WARN] [mixin/]: Reference map 'fastpaintings-forge-refmap.json' for fastpaintings-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Nov2024 23:23:24.567] [main/WARN] [mixin/]: Reference map 'coroutil.refmap.json' for coroutil.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Nov2024 23:23:24.736] [main/INFO] [Puzzles Lib/]: All mods {/workspaces/PANASss/servidor_minecraft/mods/structure-expansion-2.0.1-build.11.jar#296!/=fuzs.puzzleslib.impl.core.ForgeModContainer@483b7dc4, /workspaces/PANASss/servidor_minecraft/mods/FarmersDelight-1.20.1-1.2.4.jar#236!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6b8bdcc6, /workspaces/PANASss/servidor_minecraft/mods/[1.20.1] SecurityCraft v1.9.10.jar#205!/=fuzs.puzzleslib.impl.core.ForgeModContainer@213835b6, /workspaces/PANASss/servidor_minecraft/mods/structure_gel-1.20.1-2.16.2.jar#297!/=fuzs.puzzleslib.impl.core.ForgeModContainer@24a3d414, /workspaces/PANASss/servidor_minecraft/mods/DustrialDecor-1.3.5-1.20.jar#229!/=fuzs.puzzleslib.impl.core.ForgeModContainer@37e55819, /workspaces/PANASss/servidor_minecraft/mods/mobsunscreen-forge-1.20.1-3.1.1.jar#264!/=fuzs.puzzleslib.impl.core.ForgeModContainer@2bdcfcf, /workspaces/PANASss/servidor_minecraft/mods/MutantMonsters-v8.0.7-1.20.1-Forge.jar#266!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6248cfab, /workspaces/PANASss/servidor_minecraft/mods/Enhanced_Celestials-forge-1.20.1-5.0.0.4.jar#233!/=fuzs.puzzleslib.impl.core.ForgeModContainer@5871a482, /workspaces/PANASss/servidor_minecraft/mods/packetfixer-forge-1.4.2-1.19-to-1.20.1.jar#271!/=fuzs.puzzleslib.impl.core.ForgeModContainer@45c90a05, /workspaces/PANASss/servidor_minecraft/mods/smoothboot(reloaded)-mc1.20.1-0.0.4.jar#290!/=fuzs.puzzleslib.impl.core.ForgeModContainer@296676c4, /workspaces/PANASss/servidor_minecraft/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar#311!/=fuzs.puzzleslib.impl.core.ForgeModContainer@df7d1d4, /workspaces/PANASss/servidor_minecraft/mods/curios-forge-5.9.1+1.20.1.jar#227!/=fuzs.puzzleslib.impl.core.ForgeModContainer@58f7215c, /workspaces/PANASss/servidor_minecraft/mods/Extra Zombie Drops 1.20.1 v4.jar#235!/=fuzs.puzzleslib.impl.core.ForgeModContainer@55638165, /workspaces/PANASss/servidor_minecraft/mods/Wegotrunners0.6b1.20.1[CONFIG FILE UPDATE].jar#305!/=fuzs.puzzleslib.impl.core.ForgeModContainer@4fa91d5b, /workspaces/PANASss/servidor_minecraft/mods/simpleshops-1.2.2.jar#288!/=fuzs.puzzleslib.impl.core.ForgeModContainer@7ce30c0b, /workspaces/PANASss/servidor_minecraft/mods/tenshilib-1.20.1-1.7.6-forge.jar#300!/=fuzs.puzzleslib.impl.core.ForgeModContainer@1d7f2f0a, /workspaces/PANASss/servidor_minecraft/mods/Steam_Rails-1.6.4+forge-mc1.20.1.jar#295!/=fuzs.puzzleslib.impl.core.ForgeModContainer@54defd69, /workspaces/PANASss/servidor_minecraft/mods/ecologics-forge-1.20.1-2.2.0.jar#232!/=fuzs.puzzleslib.impl.core.ForgeModContainer@531a716c, /workspaces/PANASss/servidor_minecraft/mods/marbledsarsenal-1.20.1-2.2.0.jar#262!/=fuzs.puzzleslib.impl.core.ForgeModContainer@377dbc50, /workspaces/PANASss/servidor_minecraft/mods/cupboard-1.20.1-2.6.jar#226!/=fuzs.puzzleslib.impl.core.ForgeModContainer@531ec2ca, /workspaces/PANASss/servidor_minecraft/mods/betterfpsdist-1.20.1-4.4.jar#213!/=fuzs.puzzleslib.impl.core.ForgeModContainer@70884875, /workspaces/PANASss/servidor_minecraft/mods/no dimensions.jar#268!/=fuzs.puzzleslib.impl.core.ForgeModContainer@7019d619, /workspaces/PANASss/servidor_minecraft/mods/Satako-7.0.16-1.20.1.jar#286!/=fuzs.puzzleslib.impl.core.ForgeModContainer@2a5c6b76, /workspaces/PANASss/servidor_minecraft/mods/experimentalsettingsdisabler-1.20.1-3.0.jar#234!/=fuzs.puzzleslib.impl.core.ForgeModContainer@ff1f465, /workspaces/PANASss/servidor_minecraft/mods/athena-forge-1.20.1-3.1.2.jar#208!/=fuzs.puzzleslib.impl.core.ForgeModContainer@3d88ce0e, /workspaces/PANASss/servidor_minecraft/mods/automobility-0.4.2+1.20.1-forge.jar#210!/=fuzs.puzzleslib.impl.core.ForgeModContainer@31f7eb8, /workspaces/PANASss/servidor_minecraft/mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar#256!/=fuzs.puzzleslib.impl.core.ForgeModContainer@4ad1a276, /workspaces/PANASss/servidor_minecraft/mods/Bookshelf-Forge-1.20.1-20.2.13.jar#214!/=fuzs.puzzleslib.impl.core.ForgeModContainer@4a833595, /workspaces/PANASss/servidor_minecraft/mods/gamemenuremovegfarb-forge-mc1.19.4-2.1.2.jar#244!/=fuzs.puzzleslib.impl.core.ForgeModContainer@31006a75, /workspaces/PANASss/servidor_minecraft/mods/letmedespawn-forge-1.20.1-1.20.4-1.2.1.jar#258!/=fuzs.puzzleslib.impl.core.ForgeModContainer@49122853, /workspaces/PANASss/servidor_minecraft/mods/immersive_aircraft-1.0.1+1.20.1-forge.jar#248!/=fuzs.puzzleslib.impl.core.ForgeModContainer@e97f115, /workspaces/PANASss/servidor_minecraft/mods/create-1.20.1-0.5.1.f.jar#223_/META-INF/jarjar/flywheel-forge-1.20.1-0.6.10-7.jar#413!/=fuzs.puzzleslib.impl.core.ForgeModContainer@5d6b42cf, /workspaces/PANASss/servidor_minecraft/mods/sound-physics-remastered-forge-1.20.1-1.4.2.jar#293!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6f8ac8d5, /workspaces/PANASss/servidor_minecraft/mods/sliceanddice-forge-3.2.0.jar#289!/=fuzs.puzzleslib.impl.core.ForgeModContainer@370225c7, /workspaces/PANASss/servidor_minecraft/mods/dummmmmmy-1.20-1.8.17b.jar#228!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6ac756b, /workspaces/PANASss/servidor_minecraft/mods/CorgiLib-forge-1.20.1-4.0.1.1.jar#221!/=fuzs.puzzleslib.impl.core.ForgeModContainer@156324b, /workspaces/PANASss/servidor_minecraft/mods/gml-4.0.9-all.jar#246_/META-INF/jarjar/cgl-1.20-forge-0.3.3.jar#405!/=fuzs.puzzleslib.impl.core.ForgeModContainer@38a38ed4, /workspaces/PANASss/servidor_minecraft/mods/JustEnoughResources-1.20.1-1.4.0.247.jar#254!/=fuzs.puzzleslib.impl.core.ForgeModContainer@1e29a81a, /workspaces/PANASss/servidor_minecraft/mods/SereneSeasons-1.20.1-9.0.0.46.jar#287!/=fuzs.puzzleslib.impl.core.ForgeModContainer@7b4b8199, /workspaces/PANASss/servidor_minecraft/mods/map_atlases-1.20-6.0.7.jar#260!/=fuzs.puzzleslib.impl.core.ForgeModContainer@4bbf20d1, /workspaces/PANASss/servidor_minecraft/mods/incontrol-1.20-9.2.6.jar#250!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6fced25c, /workspaces/PANASss/servidor_minecraft/mods/YungsBetterDungeons-1.20-Forge-4.0.4.jar#307!/=fuzs.puzzleslib.impl.core.ForgeModContainer@3cf4dec7, /workspaces/PANASss/servidor_minecraft/mods/coroutil-forge-1.20.1-1.3.7.jar#222!/=fuzs.puzzleslib.impl.core.ForgeModContainer@1b94c789, /workspaces/PANASss/servidor_minecraft/mods/regrowth-1.20-46.31.2.jar#283!/=fuzs.puzzleslib.impl.core.ForgeModContainer@299fc582, /workspaces/PANASss/servidor_minecraft/libraries/net/minecraftforge/forge/1.20.1-47.2.0/forge-1.20.1-47.2.0-universal.jar#316!/=fuzs.puzzleslib.impl.core.ForgeModContainer@305aaedf, /workspaces/PANASss/servidor_minecraft/mods/gml-4.0.9-all.jar#246_/META-INF/jarjar/mod-4.0.9.jar#386!/=fuzs.puzzleslib.impl.core.ForgeModContainer@2a425cf5, /workspaces/PANASss/servidor_minecraft/mods/collective-1.20.1-7.61.jar#218!/=fuzs.puzzleslib.impl.core.ForgeModContainer@17d76ebb, /workspaces/PANASss/servidor_minecraft/mods/eatinganimation-1.20-5.0.0.jar#231!/=fuzs.puzzleslib.impl.core.ForgeModContainer@40b31a16, /workspaces/PANASss/servidor_minecraft/mods/PuzzlesLib-v8.1.20-1.20.1-Forge.jar#281!/=fuzs.puzzleslib.impl.core.ForgeModContainer@25fa6889, /workspaces/PANASss/servidor_minecraft/mods/resourcefullib-forge-1.20.1-2.1.25.jar#284!/=fuzs.puzzleslib.impl.core.ForgeModContainer@1de73d37, /workspaces/PANASss/servidor_minecraft/mods/propertymodifier-1.20.1-0.1-all.jar#279!/=fuzs.puzzleslib.impl.core.ForgeModContainer@31693a86, /workspaces/PANASss/servidor_minecraft/mods/dweller_dweller-3.13.1.jar#230!/=fuzs.puzzleslib.impl.core.ForgeModContainer@69d2e517, /workspaces/PANASss/servidor_minecraft/mods/framework-forge-1.20.1-0.7.6.jar#241!/=fuzs.puzzleslib.impl.core.ForgeModContainer@1f9a7684, /workspaces/PANASss/servidor_minecraft/mods/ftb-library-forge-2001.2.2.jar#242!/=fuzs.puzzleslib.impl.core.ForgeModContainer@3b30eec5, /workspaces/PANASss/servidor_minecraft/mods/Atlas Lib-1.20.1-1.1.12.jar#209!/=fuzs.puzzleslib.impl.core.ForgeModContainer@43755e2f, /workspaces/PANASss/servidor_minecraft/mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar#275!/=fuzs.puzzleslib.impl.core.ForgeModContainer@3d71e10b, /workspaces/PANASss/servidor_minecraft/mods/golemsarefriends-1.20.0-1.0.1.jar#247!/=fuzs.puzzleslib.impl.core.ForgeModContainer@71139e77, /workspaces/PANASss/servidor_minecraft/mods/comforts-forge-6.3.5+1.20.1.jar#220!/=fuzs.puzzleslib.impl.core.ForgeModContainer@4de91056, /workspaces/PANASss/servidor_minecraft/mods/polymorph-forge-0.49.5+1.20.1.jar#277_/META-INF/jarjar/spectrelib-forge-0.13.15+1.20.1.jar#400!/=fuzs.puzzleslib.impl.core.ForgeModContainer@2404abe2, /workspaces/PANASss/servidor_minecraft/mods/K-Turrets-3.0.25-1.20.1.jar#255!/=fuzs.puzzleslib.impl.core.ForgeModContainer@16cf7fd0, /workspaces/PANASss/servidor_minecraft/mods/Better Mob Food - Version 1.0.1 (Beta).jar#212!/=fuzs.puzzleslib.impl.core.ForgeModContainer@7bc2bb58, /workspaces/PANASss/servidor_minecraft/mods/marbledsapi-1.20.1-1.0.7.jar#261!/=fuzs.puzzleslib.impl.core.ForgeModContainer@7e2c6fd6, /workspaces/PANASss/servidor_minecraft/mods/kotlinforforge-4.11.0-all.jar#257_/META-INF/jarjar/kffmod-4.11.0.jar#398!/=fuzs.puzzleslib.impl.core.ForgeModContainer@7ff6804a, /workspaces/PANASss/servidor_minecraft/mods/ToolBelt-1.20.1-1.20.01.jar#303!/=fuzs.puzzleslib.impl.core.ForgeModContainer@12aa519b, /workspaces/PANASss/servidor_minecraft/mods/CreativeCore_FORGE_v2.11.30_mc1.20.1.jar#225!/=fuzs.puzzleslib.impl.core.ForgeModContainer@7c5c20ed, /workspaces/PANASss/servidor_minecraft/mods/architectury-9.2.14-forge.jar#207!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6113a26f, /workspaces/PANASss/servidor_minecraft/mods/polymorph-forge-0.49.5+1.20.1.jar#277!/=fuzs.puzzleslib.impl.core.ForgeModContainer@2aac8ad7, /workspaces/PANASss/servidor_minecraft/mods/geckolib-forge-1.20.1-4.4.6.jar#245!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6a4a2090, /workspaces/PANASss/servidor_minecraft/mods/create-1.20.1-0.5.1.f.jar#223!/=fuzs.puzzleslib.impl.core.ForgeModContainer@778c2e7c, /workspaces/PANASss/servidor_minecraft/mods/pointblank-1.20.1-1.5.5.jar#276!/=fuzs.puzzleslib.impl.core.ForgeModContainer@b70fa38, /workspaces/PANASss/servidor_minecraft/mods/YungsBetterMineshafts-1.20-Forge-4.0.4.jar#308!/=fuzs.puzzleslib.impl.core.ForgeModContainer@45c423b3, /workspaces/PANASss/servidor_minecraft/mods/journeymap-1.20.1-5.10.2-forge.jar#253!/=fuzs.puzzleslib.impl.core.ForgeModContainer@7e31d53b, /workspaces/PANASss/servidor_minecraft/mods/sophisticatedbackpacks-1.20.1-3.20.5.1044.jar#291!/=fuzs.puzzleslib.impl.core.ForgeModContainer@68d8eb4f, /workspaces/PANASss/servidor_minecraft/mods/YungsApi-1.20-Forge-4.0.5.jar#306!/=fuzs.puzzleslib.impl.core.ForgeModContainer@64757d56, /workspaces/PANASss/servidor_minecraft/mods/UndergroundBunkers-1.0.3-1.19.2-1.20.4-forge.jar#304!/=fuzs.puzzleslib.impl.core.ForgeModContainer@4813d0, /workspaces/PANASss/servidor_minecraft/mods/firstjoinmessage-1.20.1-3.5.jar#239!/=fuzs.puzzleslib.impl.core.ForgeModContainer@702096ef, /workspaces/PANASss/servidor_minecraft/mods/propertymodifier-1.20.1-0.1-all.jar#279_/META-INF/jarjar/mixinextras-forge-0.2.0-beta.8.jar#391!/=fuzs.puzzleslib.impl.core.ForgeModContainer@5f0d8937, /workspaces/PANASss/servidor_minecraft/mods/InsaneLib-1.13.5-mc1.20.1.jar#251!/=fuzs.puzzleslib.impl.core.ForgeModContainer@105dc04d, /workspaces/PANASss/servidor_minecraft/mods/jei-1.20.1-forge-15.3.0.7.jar#252!/=fuzs.puzzleslib.impl.core.ForgeModContainer@504b8705, /workspaces/PANASss/servidor_minecraft/mods/lostcities-1.20-7.1.8.jar#259!/=fuzs.puzzleslib.impl.core.ForgeModContainer@24a8e40d, /workspaces/PANASss/servidor_minecraft/mods/cleanswing-1.20-1.5.jar#216!/=fuzs.puzzleslib.impl.core.ForgeModContainer@175f859e, /workspaces/PANASss/servidor_minecraft/mods/PuzzlesLib-v8.1.20-1.20.1-Forge.jar#281_/META-INF/jarjar/puzzlesaccessapi-forge-8.0.7.jar#385!/=fuzs.puzzleslib.impl.core.ForgeModContainer@69fe7090, /workspaces/PANASss/servidor_minecraft/mods/flan-1.20.1-1.10.4-forge.jar#240!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6501b105, /workspaces/PANASss/servidor_minecraft/mods/The-Hordes-1.20.1-1.5.3a.jar#302!/=fuzs.puzzleslib.impl.core.ForgeModContainer@66ab924, /workspaces/PANASss/servidor_minecraft/mods/responsiveshields-2.3-mc1.18-19-20.x.jar#285!/=fuzs.puzzleslib.impl.core.ForgeModContainer@6df2af02, /workspaces/PANASss/servidor_minecraft/mods/RapidLeafDecay-1.20.1-2.0.2.jar#282!/=fuzs.puzzleslib.impl.core.ForgeModContainer@779228dc, /workspaces/PANASss/servidor_minecraft/mods/sophisticatedcore-1.20.1-0.6.22.611.jar#292!/=fuzs.puzzleslib.impl.core.ForgeModContainer@1f7336b2, /workspaces/PANASss/servidor_minecraft/mods/moonlight-1.20-2.11.37-forge.jar#265!/=fuzs.puzzleslib.impl.core.ForgeModContainer@4c030fe1, /workspaces/PANASss/servidor_minecraft/mods/ftb-teams-forge-2001.3.0.jar#243!/=fuzs.puzzleslib.impl.core.ForgeModContainer@347123dc, /workspaces/PANASss/servidor_minecraft/mods/alexsmobs-1.22.8.jar#206!/=fuzs.puzzleslib.impl.core.ForgeModContainer@52433946, /workspaces/PANASss/servidor_minecraft/mods/projectvibrantjourneys-1.20.1-6.0.0.jar#278!/=fuzs.puzzleslib.impl.core.ForgeModContainer@5403431a, /workspaces/PANASss/servidor_minecraft/mods/fastpaintings-1.20-1.2.7.jar#237!/=fuzs.puzzleslib.impl.core.ForgeModContainer@ab327c, /workspaces/PANASss/servidor_minecraft/mods/Terralith_1.20_v2.5.1.jar#301!/=fuzs.puzzleslib.impl.core.ForgeModContainer@3d798e76, /workspaces/PANASss/servidor_minecraft/mods/Pillagers Gun-1.20.1-forge-1.3.0.jar#274!/=fuzs.puzzleslib.impl.core.ForgeModContainer@763b0996, /workspaces/PANASss/servidor_minecraft/mods/psg-5.40.1.jar#280!/=fuzs.puzzleslib.impl.core.ForgeModContainer@386e9fd8, /workspaces/PANASss/servidor_minecraft/mods/tacz-1.20.1-1.0.2-release.jar#299!/=fuzs.puzzleslib.impl.core.ForgeModContainer@618f627b, /workspaces/PANASss/servidor_minecraft/mods/cloth-config-11.1.118-forge.jar#217!/=fuzs.puzzleslib.impl.core.ForgeModContainer@10745a02, /workspaces/PANASss/servidor_minecraft/mods/BadMobs-1.20.1-19.0.2.jar#211!/=fuzs.puzzleslib.impl.core.ForgeModContainer@3e2d8623, /workspaces/PANASss/servidor_minecraft/mods/Pehkui-3.8.2+1.20.1-forge.jar#272!/=fuzs.puzzleslib.impl.core.ForgeModContainer@72715e61, /workspaces/PANASss/servidor_minecraft/mods/combatroll-forge-1.3.2+1.20.1.jar#219!/=fuzs.puzzleslib.impl.core.ForgeModContainer@68f776ee, /workspaces/PANASss/servidor_minecraft/mods/starterkit-1.20.1-6.7.jar#294!/=fuzs.puzzleslib.impl.core.ForgeModContainer@5a6195b8, /workspaces/PANASss/servidor_minecraft/mods/ferritecore-6.0.1-forge.jar#238!/=fuzs.puzzleslib.impl.core.ForgeModContainer@8af1c49, /workspaces/PANASss/servidor_minecraft/mods/table_top_craft-1.20.1-6.1.2.jar#298!/=fuzs.puzzleslib.impl.core.ForgeModContainer@70d5d96b, /workspaces/PANASss/servidor_minecraft/mods/Mutants Buff 1.5.3 - 1.20.1.jar#267!/=fuzs.puzzleslib.impl.core.ForgeModContainer@23469199, /workspaces/PANASss/servidor_minecraft/mods/improvedmobs-1.20.1-1.12.4-forge.jar#249!/=fuzs.puzzleslib.impl.core.ForgeModContainer@75dc1c1c, /workspaces/PANASss/servidor_minecraft/mods/MaxArmory_1.20.1_1.1.2.jar#263!/=fuzs.puzzleslib.impl.core.ForgeModContainer@5611bba, /workspaces/PANASss/servidor_minecraft/mods/Overworld Netherite ore 2.3 1.20.1 Forge.jar#270!/=fuzs.puzzleslib.impl.core.ForgeModContainer@5ba184fc, /workspaces/PANASss/servidor_minecraft/mods/create_netherless-1.20.1-1.3.jar#224!/=fuzs.puzzleslib.impl.core.ForgeModContainer@4cfc0c48, /workspaces/PANASss/servidor_minecraft/mods/Philips-Ruins1.20.1-4.0.jar#273!/=fuzs.puzzleslib.impl.core.ForgeModContainer@59d5c537, /workspaces/PANASss/servidor_minecraft/mods/no-ruined-nether-portals-1.0.jar#269!/=fuzs.puzzleslib.impl.core.ForgeModContainer@5464b97c, /workspaces/PANASss/servidor_minecraft/mods/citadel-2.5.4-1.20.1.jar#215!/=fuzs.puzzleslib.impl.core.ForgeModContainer@3355168, /workspaces/PANASss/servidor_minecraft/mods/YungsBetterStrongholds-1.20-Forge-4.0.3.jar#309!/=fuzs.puzzleslib.impl.core.ForgeModContainer@2f07930a}
+[28Nov2024 23:23:24.739] [main/INFO] [Puzzles Lib/]: Scheme for structureexpansion: /workspaces/PANASss/servidor_minecraft/mods/structure-expansion-2.0.1-build.11.jar#296!/
+[28Nov2024 23:23:24.739] [main/INFO] [Puzzles Lib/]: Scheme for farmersdelight: /workspaces/PANASss/servidor_minecraft/mods/FarmersDelight-1.20.1-1.2.4.jar#236!/
+[28Nov2024 23:23:24.740] [main/INFO] [Puzzles Lib/]: Scheme for securitycraft: /workspaces/PANASss/servidor_minecraft/mods/[1.20.1] SecurityCraft v1.9.10.jar#205!/
+[28Nov2024 23:23:24.740] [main/INFO] [Puzzles Lib/]: Scheme for structure_gel: /workspaces/PANASss/servidor_minecraft/mods/structure_gel-1.20.1-2.16.2.jar#297!/
+[28Nov2024 23:23:24.741] [main/INFO] [Puzzles Lib/]: Scheme for dustrial_decor: /workspaces/PANASss/servidor_minecraft/mods/DustrialDecor-1.3.5-1.20.jar#229!/
+[28Nov2024 23:23:24.741] [main/INFO] [Puzzles Lib/]: Scheme for mobsunscreen: /workspaces/PANASss/servidor_minecraft/mods/mobsunscreen-forge-1.20.1-3.1.1.jar#264!/
+[28Nov2024 23:23:24.748] [main/INFO] [Puzzles Lib/]: Scheme for mutantmonsters: /workspaces/PANASss/servidor_minecraft/mods/MutantMonsters-v8.0.7-1.20.1-Forge.jar#266!/
+[28Nov2024 23:23:24.749] [main/INFO] [Puzzles Lib/]: Scheme for enhancedcelestials: /workspaces/PANASss/servidor_minecraft/mods/Enhanced_Celestials-forge-1.20.1-5.0.0.4.jar#233!/
+[28Nov2024 23:23:24.749] [main/INFO] [Puzzles Lib/]: Scheme for packetfixer: /workspaces/PANASss/servidor_minecraft/mods/packetfixer-forge-1.4.2-1.19-to-1.20.1.jar#271!/
+[28Nov2024 23:23:24.751] [main/INFO] [Puzzles Lib/]: Scheme for smoothboot: /workspaces/PANASss/servidor_minecraft/mods/smoothboot(reloaded)-mc1.20.1-0.0.4.jar#290!/
+[28Nov2024 23:23:24.752] [main/INFO] [Puzzles Lib/]: Scheme for minecraft: /workspaces/PANASss/servidor_minecraft/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar#311!/
+[28Nov2024 23:23:24.753] [main/INFO] [Puzzles Lib/]: Scheme for curios: /workspaces/PANASss/servidor_minecraft/mods/curios-forge-5.9.1+1.20.1.jar#227!/
+[28Nov2024 23:23:24.754] [main/INFO] [Puzzles Lib/]: Scheme for extra_zombie_drops: /workspaces/PANASss/servidor_minecraft/mods/Extra Zombie Drops 1.20.1 v4.jar#235!/
+[28Nov2024 23:23:24.754] [main/INFO] [Puzzles Lib/]: Scheme for wegotrunnners: /workspaces/PANASss/servidor_minecraft/mods/Wegotrunners0.6b1.20.1[CONFIG FILE UPDATE].jar#305!/
+[28Nov2024 23:23:24.755] [main/INFO] [Puzzles Lib/]: Scheme for simpleshops: /workspaces/PANASss/servidor_minecraft/mods/simpleshops-1.2.2.jar#288!/
+[28Nov2024 23:23:24.756] [main/INFO] [Puzzles Lib/]: Scheme for tenshilib: /workspaces/PANASss/servidor_minecraft/mods/tenshilib-1.20.1-1.7.6-forge.jar#300!/
+[28Nov2024 23:23:24.757] [main/INFO] [Puzzles Lib/]: Scheme for railways: /workspaces/PANASss/servidor_minecraft/mods/Steam_Rails-1.6.4+forge-mc1.20.1.jar#295!/
+[28Nov2024 23:23:24.757] [main/INFO] [Puzzles Lib/]: Scheme for ecologics: /workspaces/PANASss/servidor_minecraft/mods/ecologics-forge-1.20.1-2.2.0.jar#232!/
+[28Nov2024 23:23:24.758] [main/INFO] [Puzzles Lib/]: Scheme for marbledsarsenal: /workspaces/PANASss/servidor_minecraft/mods/marbledsarsenal-1.20.1-2.2.0.jar#262!/
+[28Nov2024 23:23:24.758] [main/INFO] [Puzzles Lib/]: Scheme for cupboard: /workspaces/PANASss/servidor_minecraft/mods/cupboard-1.20.1-2.6.jar#226!/
+[28Nov2024 23:23:24.759] [main/INFO] [Puzzles Lib/]: Scheme for betterfpsdist: /workspaces/PANASss/servidor_minecraft/mods/betterfpsdist-1.20.1-4.4.jar#213!/
+[28Nov2024 23:23:24.760] [main/INFO] [Puzzles Lib/]: Scheme for no_portals: /workspaces/PANASss/servidor_minecraft/mods/no dimensions.jar#268!/
+[28Nov2024 23:23:24.760] [main/INFO] [Puzzles Lib/]: Scheme for satako: /workspaces/PANASss/servidor_minecraft/mods/Satako-7.0.16-1.20.1.jar#286!/
+[28Nov2024 23:23:24.762] [main/INFO] [Puzzles Lib/]: Scheme for experimentalsettingsdisabler: /workspaces/PANASss/servidor_minecraft/mods/experimentalsettingsdisabler-1.20.1-3.0.jar#234!/
+[28Nov2024 23:23:24.763] [main/INFO] [Puzzles Lib/]: Scheme for athena: /workspaces/PANASss/servidor_minecraft/mods/athena-forge-1.20.1-3.1.2.jar#208!/
+[28Nov2024 23:23:24.763] [main/INFO] [Puzzles Lib/]: Scheme for automobility: /workspaces/PANASss/servidor_minecraft/mods/automobility-0.4.2+1.20.1-forge.jar#210!/
+[28Nov2024 23:23:24.763] [main/INFO] [Puzzles Lib/]: Scheme for konkrete: /workspaces/PANASss/servidor_minecraft/mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar#256!/
+[28Nov2024 23:23:24.764] [main/INFO] [Puzzles Lib/]: Scheme for bookshelf: /workspaces/PANASss/servidor_minecraft/mods/Bookshelf-Forge-1.20.1-20.2.13.jar#214!/
+[28Nov2024 23:23:24.764] [main/INFO] [Puzzles Lib/]: Scheme for gamemenuremovegfarb: /workspaces/PANASss/servidor_minecraft/mods/gamemenuremovegfarb-forge-mc1.19.4-2.1.2.jar#244!/
+[28Nov2024 23:23:24.765] [main/INFO] [Puzzles Lib/]: Scheme for letmedespawn: /workspaces/PANASss/servidor_minecraft/mods/letmedespawn-forge-1.20.1-1.20.4-1.2.1.jar#258!/
+[28Nov2024 23:23:24.768] [main/INFO] [Puzzles Lib/]: Scheme for immersive_aircraft: /workspaces/PANASss/servidor_minecraft/mods/immersive_aircraft-1.0.1+1.20.1-forge.jar#248!/
+[28Nov2024 23:23:24.775] [main/INFO] [Puzzles Lib/]: Scheme for flywheel: /workspaces/PANASss/servidor_minecraft/mods/create-1.20.1-0.5.1.f.jar#223!/
+[28Nov2024 23:23:24.776] [main/INFO] [Puzzles Lib/]: Scheme for sound_physics_remastered: /workspaces/PANASss/servidor_minecraft/mods/sound-physics-remastered-forge-1.20.1-1.4.2.jar#293!/
+[28Nov2024 23:23:24.777] [main/INFO] [Puzzles Lib/]: Scheme for sliceanddice: /workspaces/PANASss/servidor_minecraft/mods/sliceanddice-forge-3.2.0.jar#289!/
+[28Nov2024 23:23:24.777] [main/INFO] [Puzzles Lib/]: Scheme for dummmmmmy: /workspaces/PANASss/servidor_minecraft/mods/dummmmmmy-1.20-1.8.17b.jar#228!/
+[28Nov2024 23:23:24.777] [main/INFO] [Puzzles Lib/]: Scheme for corgilib: /workspaces/PANASss/servidor_minecraft/mods/CorgiLib-forge-1.20.1-4.0.1.1.jar#221!/
+[28Nov2024 23:23:24.778] [main/INFO] [Puzzles Lib/]: Scheme for commongroovylibrary: /workspaces/PANASss/servidor_minecraft/mods/gml-4.0.9-all.jar#246!/
+[28Nov2024 23:23:24.778] [main/INFO] [Puzzles Lib/]: Scheme for jeresources: /workspaces/PANASss/servidor_minecraft/mods/JustEnoughResources-1.20.1-1.4.0.247.jar#254!/
+[28Nov2024 23:23:24.779] [main/INFO] [Puzzles Lib/]: Scheme for sereneseasons: /workspaces/PANASss/servidor_minecraft/mods/SereneSeasons-1.20.1-9.0.0.46.jar#287!/
+[28Nov2024 23:23:24.780] [main/INFO] [Puzzles Lib/]: Scheme for map_atlases: /workspaces/PANASss/servidor_minecraft/mods/map_atlases-1.20-6.0.7.jar#260!/
+[28Nov2024 23:23:24.782] [main/INFO] [Puzzles Lib/]: Scheme for incontrol: /workspaces/PANASss/servidor_minecraft/mods/incontrol-1.20-9.2.6.jar#250!/
+[28Nov2024 23:23:24.784] [main/INFO] [Puzzles Lib/]: Scheme for betterdungeons: /workspaces/PANASss/servidor_minecraft/mods/YungsBetterDungeons-1.20-Forge-4.0.4.jar#307!/
+[28Nov2024 23:23:24.785] [main/INFO] [Puzzles Lib/]: Scheme for coroutil: /workspaces/PANASss/servidor_minecraft/mods/coroutil-forge-1.20.1-1.3.7.jar#222!/
+[28Nov2024 23:23:24.786] [main/INFO] [Puzzles Lib/]: Scheme for regrowth: /workspaces/PANASss/servidor_minecraft/mods/regrowth-1.20-46.31.2.jar#283!/
+[28Nov2024 23:23:24.787] [main/INFO] [Puzzles Lib/]: Scheme for forge: /workspaces/PANASss/servidor_minecraft/libraries/net/minecraftforge/forge/1.20.1-47.2.0/forge-1.20.1-47.2.0-universal.jar#316!/
+[28Nov2024 23:23:24.788] [main/INFO] [Puzzles Lib/]: Scheme for gml: /workspaces/PANASss/servidor_minecraft/mods/gml-4.0.9-all.jar#246!/
+[28Nov2024 23:23:24.789] [main/INFO] [Puzzles Lib/]: Scheme for collective: /workspaces/PANASss/servidor_minecraft/mods/collective-1.20.1-7.61.jar#218!/
+[28Nov2024 23:23:24.789] [main/INFO] [Puzzles Lib/]: Scheme for eatinganimation: /workspaces/PANASss/servidor_minecraft/mods/eatinganimation-1.20-5.0.0.jar#231!/
+[28Nov2024 23:23:24.790] [main/INFO] [Puzzles Lib/]: Scheme for puzzleslib: /workspaces/PANASss/servidor_minecraft/mods/PuzzlesLib-v8.1.20-1.20.1-Forge.jar#281!/
+[28Nov2024 23:23:24.792] [main/INFO] [Puzzles Lib/]: Scheme for resourcefullib: /workspaces/PANASss/servidor_minecraft/mods/resourcefullib-forge-1.20.1-2.1.25.jar#284!/
+[28Nov2024 23:23:24.792] [main/INFO] [Puzzles Lib/]: Scheme for propertymodifier: /workspaces/PANASss/servidor_minecraft/mods/propertymodifier-1.20.1-0.1-all.jar#279!/
+[28Nov2024 23:23:24.793] [main/INFO] [Puzzles Lib/]: Scheme for dweller_dweller: /workspaces/PANASss/servidor_minecraft/mods/dweller_dweller-3.13.1.jar#230!/
+[28Nov2024 23:23:24.793] [main/INFO] [Puzzles Lib/]: Scheme for framework: /workspaces/PANASss/servidor_minecraft/mods/framework-forge-1.20.1-0.7.6.jar#241!/
+[28Nov2024 23:23:24.794] [main/INFO] [Puzzles Lib/]: Scheme for ftblibrary: /workspaces/PANASss/servidor_minecraft/mods/ftb-library-forge-2001.2.2.jar#242!/
+[28Nov2024 23:23:24.794] [main/INFO] [Puzzles Lib/]: Scheme for atlaslib: /workspaces/PANASss/servidor_minecraft/mods/Atlas Lib-1.20.1-1.1.12.jar#209!/
+[28Nov2024 23:23:24.796] [main/INFO] [Puzzles Lib/]: Scheme for playeranimator: /workspaces/PANASss/servidor_minecraft/mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar#275!/
+[28Nov2024 23:23:24.800] [main/INFO] [Puzzles Lib/]: Scheme for golemsarefriends: /workspaces/PANASss/servidor_minecraft/mods/golemsarefriends-1.20.0-1.0.1.jar#247!/
+[28Nov2024 23:23:24.800] [main/INFO] [Puzzles Lib/]: Scheme for comforts: /workspaces/PANASss/servidor_minecraft/mods/comforts-forge-6.3.5+1.20.1.jar#220!/
+[28Nov2024 23:23:24.802] [main/INFO] [Puzzles Lib/]: Scheme for spectrelib: /workspaces/PANASss/servidor_minecraft/mods/polymorph-forge-0.49.5+1.20.1.jar#277!/
+[28Nov2024 23:23:24.803] [main/INFO] [Puzzles Lib/]: Scheme for k_turrets: /workspaces/PANASss/servidor_minecraft/mods/K-Turrets-3.0.25-1.20.1.jar#255!/
+[28Nov2024 23:23:24.804] [main/INFO] [Puzzles Lib/]: Scheme for better_mob_food: /workspaces/PANASss/servidor_minecraft/mods/Better Mob Food - Version 1.0.1 (Beta).jar#212!/
+[28Nov2024 23:23:24.804] [main/INFO] [Puzzles Lib/]: Scheme for marbledsapi: /workspaces/PANASss/servidor_minecraft/mods/marbledsapi-1.20.1-1.0.7.jar#261!/
+[28Nov2024 23:23:24.805] [main/INFO] [Puzzles Lib/]: Scheme for kotlinforforge: /workspaces/PANASss/servidor_minecraft/mods/kotlinforforge-4.11.0-all.jar#257!/
+[28Nov2024 23:23:24.806] [main/INFO] [Puzzles Lib/]: Scheme for toolbelt: /workspaces/PANASss/servidor_minecraft/mods/ToolBelt-1.20.1-1.20.01.jar#303!/
+[28Nov2024 23:23:24.807] [main/INFO] [Puzzles Lib/]: Scheme for creativecore: /workspaces/PANASss/servidor_minecraft/mods/CreativeCore_FORGE_v2.11.30_mc1.20.1.jar#225!/
+[28Nov2024 23:23:24.808] [main/INFO] [Puzzles Lib/]: Scheme for architectury: /workspaces/PANASss/servidor_minecraft/mods/architectury-9.2.14-forge.jar#207!/
+[28Nov2024 23:23:24.808] [main/INFO] [Puzzles Lib/]: Scheme for polymorph: /workspaces/PANASss/servidor_minecraft/mods/polymorph-forge-0.49.5+1.20.1.jar#277!/
+[28Nov2024 23:23:24.809] [main/INFO] [Puzzles Lib/]: Scheme for geckolib: /workspaces/PANASss/servidor_minecraft/mods/geckolib-forge-1.20.1-4.4.6.jar#245!/
+[28Nov2024 23:23:24.809] [main/INFO] [Puzzles Lib/]: Scheme for create: /workspaces/PANASss/servidor_minecraft/mods/create-1.20.1-0.5.1.f.jar#223!/
+[28Nov2024 23:23:24.810] [main/INFO] [Puzzles Lib/]: Scheme for pointblank: /workspaces/PANASss/servidor_minecraft/mods/pointblank-1.20.1-1.5.5.jar#276!/
+[28Nov2024 23:23:24.810] [main/INFO] [Puzzles Lib/]: Scheme for bettermineshafts: /workspaces/PANASss/servidor_minecraft/mods/YungsBetterMineshafts-1.20-Forge-4.0.4.jar#308!/
+[28Nov2024 23:23:24.811] [main/INFO] [Puzzles Lib/]: Scheme for journeymap: /workspaces/PANASss/servidor_minecraft/mods/journeymap-1.20.1-5.10.2-forge.jar#253!/
+[28Nov2024 23:23:24.811] [main/INFO] [Puzzles Lib/]: Scheme for sophisticatedbackpacks: /workspaces/PANASss/servidor_minecraft/mods/sophisticatedbackpacks-1.20.1-3.20.5.1044.jar#291!/
+[28Nov2024 23:23:24.813] [main/INFO] [Puzzles Lib/]: Scheme for yungsapi: /workspaces/PANASss/servidor_minecraft/mods/YungsApi-1.20-Forge-4.0.5.jar#306!/
+[28Nov2024 23:23:24.813] [main/INFO] [Puzzles Lib/]: Scheme for underground_bunkers: /workspaces/PANASss/servidor_minecraft/mods/UndergroundBunkers-1.0.3-1.19.2-1.20.4-forge.jar#304!/
+[28Nov2024 23:23:24.813] [main/INFO] [Puzzles Lib/]: Scheme for firstjoinmessage: /workspaces/PANASss/servidor_minecraft/mods/firstjoinmessage-1.20.1-3.5.jar#239!/
+[28Nov2024 23:23:24.814] [main/INFO] [Puzzles Lib/]: Scheme for mixinextras: /workspaces/PANASss/servidor_minecraft/mods/propertymodifier-1.20.1-0.1-all.jar#279!/
+[28Nov2024 23:23:24.815] [main/INFO] [Puzzles Lib/]: Scheme for insanelib: /workspaces/PANASss/servidor_minecraft/mods/InsaneLib-1.13.5-mc1.20.1.jar#251!/
+[28Nov2024 23:23:24.819] [main/INFO] [Puzzles Lib/]: Scheme for jei: /workspaces/PANASss/servidor_minecraft/mods/jei-1.20.1-forge-15.3.0.7.jar#252!/
+[28Nov2024 23:23:24.820] [main/INFO] [Puzzles Lib/]: Scheme for lostcities: /workspaces/PANASss/servidor_minecraft/mods/lostcities-1.20-7.1.8.jar#259!/
+[28Nov2024 23:23:24.821] [main/INFO] [Puzzles Lib/]: Scheme for cleanswing: /workspaces/PANASss/servidor_minecraft/mods/cleanswing-1.20-1.5.jar#216!/
+[28Nov2024 23:23:24.822] [main/INFO] [Puzzles Lib/]: Scheme for puzzlesaccessapi: /workspaces/PANASss/servidor_minecraft/mods/PuzzlesLib-v8.1.20-1.20.1-Forge.jar#281!/
+[28Nov2024 23:23:24.823] [main/INFO] [Puzzles Lib/]: Scheme for flan: /workspaces/PANASss/servidor_minecraft/mods/flan-1.20.1-1.10.4-forge.jar#240!/
+[28Nov2024 23:23:24.830] [main/INFO] [Puzzles Lib/]: Scheme for hordes: /workspaces/PANASss/servidor_minecraft/mods/The-Hordes-1.20.1-1.5.3a.jar#302!/
+[28Nov2024 23:23:24.830] [main/INFO] [Puzzles Lib/]: Scheme for responsiveshields: /workspaces/PANASss/servidor_minecraft/mods/responsiveshields-2.3-mc1.18-19-20.x.jar#285!/
+[28Nov2024 23:23:24.831] [main/INFO] [Puzzles Lib/]: Scheme for rapid_leaf_decay: /workspaces/PANASss/servidor_minecraft/mods/RapidLeafDecay-1.20.1-2.0.2.jar#282!/
+[28Nov2024 23:23:24.832] [main/INFO] [Puzzles Lib/]: Scheme for sophisticatedcore: /workspaces/PANASss/servidor_minecraft/mods/sophisticatedcore-1.20.1-0.6.22.611.jar#292!/
+[28Nov2024 23:23:24.832] [main/INFO] [Puzzles Lib/]: Scheme for moonlight: /workspaces/PANASss/servidor_minecraft/mods/moonlight-1.20-2.11.37-forge.jar#265!/
+[28Nov2024 23:23:24.832] [main/INFO] [Puzzles Lib/]: Scheme for ftbteams: /workspaces/PANASss/servidor_minecraft/mods/ftb-teams-forge-2001.3.0.jar#243!/
+[28Nov2024 23:23:24.832] [main/INFO] [Puzzles Lib/]: Scheme for alexsmobs: /workspaces/PANASss/servidor_minecraft/mods/alexsmobs-1.22.8.jar#206!/
+[28Nov2024 23:23:24.832] [main/INFO] [Puzzles Lib/]: Scheme for projectvibrantjourneys: /workspaces/PANASss/servidor_minecraft/mods/projectvibrantjourneys-1.20.1-6.0.0.jar#278!/
+[28Nov2024 23:23:24.833] [main/INFO] [Puzzles Lib/]: Scheme for fastpaintings: /workspaces/PANASss/servidor_minecraft/mods/fastpaintings-1.20-1.2.7.jar#237!/
+[28Nov2024 23:23:24.833] [main/INFO] [Puzzles Lib/]: Scheme for terralith: /workspaces/PANASss/servidor_minecraft/mods/Terralith_1.20_v2.5.1.jar#301!/
+[28Nov2024 23:23:24.833] [main/INFO] [Puzzles Lib/]: Scheme for pillagers_gun: /workspaces/PANASss/servidor_minecraft/mods/Pillagers Gun-1.20.1-forge-1.3.0.jar#274!/
+[28Nov2024 23:23:24.834] [main/INFO] [Puzzles Lib/]: Scheme for psg: /workspaces/PANASss/servidor_minecraft/mods/psg-5.40.1.jar#280!/
+[28Nov2024 23:23:24.834] [main/INFO] [Puzzles Lib/]: Scheme for tacz: /workspaces/PANASss/servidor_minecraft/mods/tacz-1.20.1-1.0.2-release.jar#299!/
+[28Nov2024 23:23:24.834] [main/INFO] [Puzzles Lib/]: Scheme for cloth_config: /workspaces/PANASss/servidor_minecraft/mods/cloth-config-11.1.118-forge.jar#217!/
+[28Nov2024 23:23:24.834] [main/INFO] [Puzzles Lib/]: Scheme for badmobs: /workspaces/PANASss/servidor_minecraft/mods/BadMobs-1.20.1-19.0.2.jar#211!/
+[28Nov2024 23:23:24.835] [main/INFO] [Puzzles Lib/]: Scheme for pehkui: /workspaces/PANASss/servidor_minecraft/mods/Pehkui-3.8.2+1.20.1-forge.jar#272!/
+[28Nov2024 23:23:24.835] [main/INFO] [Puzzles Lib/]: Scheme for combatroll: /workspaces/PANASss/servidor_minecraft/mods/combatroll-forge-1.3.2+1.20.1.jar#219!/
+[28Nov2024 23:23:24.835] [main/INFO] [Puzzles Lib/]: Scheme for starterkit: /workspaces/PANASss/servidor_minecraft/mods/starterkit-1.20.1-6.7.jar#294!/
+[28Nov2024 23:23:24.841] [main/INFO] [Puzzles Lib/]: Scheme for ferritecore: /workspaces/PANASss/servidor_minecraft/mods/ferritecore-6.0.1-forge.jar#238!/
+[28Nov2024 23:23:24.841] [main/INFO] [Puzzles Lib/]: Scheme for table_top_craft: /workspaces/PANASss/servidor_minecraft/mods/table_top_craft-1.20.1-6.1.2.jar#298!/
+[28Nov2024 23:23:24.842] [main/INFO] [Puzzles Lib/]: Scheme for mutantsbuff: /workspaces/PANASss/servidor_minecraft/mods/Mutants Buff 1.5.3 - 1.20.1.jar#267!/
+[28Nov2024 23:23:24.842] [main/INFO] [Puzzles Lib/]: Scheme for improvedmobs: /workspaces/PANASss/servidor_minecraft/mods/improvedmobs-1.20.1-1.12.4-forge.jar#249!/
+[28Nov2024 23:23:24.842] [main/INFO] [Puzzles Lib/]: Scheme for max_armory: /workspaces/PANASss/servidor_minecraft/mods/MaxArmory_1.20.1_1.1.2.jar#263!/
+[28Nov2024 23:23:24.843] [main/INFO] [Puzzles Lib/]: Scheme for overworld_netherite_ore: /workspaces/PANASss/servidor_minecraft/mods/Overworld Netherite ore 2.3 1.20.1 Forge.jar#270!/
+[28Nov2024 23:23:24.843] [main/INFO] [Puzzles Lib/]: Scheme for create_netherless: /workspaces/PANASss/servidor_minecraft/mods/create_netherless-1.20.1-1.3.jar#224!/
+[28Nov2024 23:23:24.843] [main/INFO] [Puzzles Lib/]: Scheme for philipsruins: /workspaces/PANASss/servidor_minecraft/mods/Philips-Ruins1.20.1-4.0.jar#273!/
+[28Nov2024 23:23:24.846] [main/INFO] [Puzzles Lib/]: Scheme for no_ruined_nether_portals: /workspaces/PANASss/servidor_minecraft/mods/no-ruined-nether-portals-1.0.jar#269!/
+[28Nov2024 23:23:24.846] [main/INFO] [Puzzles Lib/]: Scheme for citadel: /workspaces/PANASss/servidor_minecraft/mods/citadel-2.5.4-1.20.1.jar#215!/
+[28Nov2024 23:23:24.847] [main/INFO] [Puzzles Lib/]: Scheme for betterstrongholds: /workspaces/PANASss/servidor_minecraft/mods/YungsBetterStrongholds-1.20-Forge-4.0.3.jar#309!/
+[28Nov2024 23:23:24.862] [main/INFO] [Puzzles Lib/]: Loading 112 mods:
+	- alexsmobs 1.22.8
+	- architectury 9.2.14
+	- athena 3.1.2
+	- atlaslib 1.1.12
+	- automobility 0.4.2+1.20.1-forge
+	- badmobs 19.0.2
+	- better_mob_food 1.0.0
+	- betterdungeons 1.20-Forge-4.0.4
+	- betterfpsdist 1.20.1-4.4
+	- bettermineshafts 1.20-Forge-4.0.4
+	- betterstrongholds 1.20-Forge-4.0.3
+	- bookshelf 20.2.13
+	- citadel 2.5.4
+	- cleanswing 1.20-1.5
+	- cloth_config 11.1.118
+	- collective 7.61
+	- combatroll 1.3.2+1.20.1
+	- comforts 6.3.5+1.20.1
+	- commongroovylibrary 0.3.3
+	- corgilib 4.0.1.1
+	- coroutil 1.20.1-1.3.7
+	- create 0.5.1.f
+		\-- flywheel 0.6.10-7
+	- create_netherless 1.3.0
+	- creativecore 2.11.30
+	- cupboard 1.20.1-2.6
+	- curios 5.9.1+1.20.1
+	- dummmmmmy 1.20-1.8.17b
+	- dustrial_decor 1.3.2
+	- dweller_dweller 3.13.1
+	- eatinganimation 5.0.0
+	- ecologics 2.2.0
+	- enhancedcelestials 5.0.0.4
+	- experimentalsettingsdisabler 3.0
+	- extra_zombie_drops 1.0.0
+	- farmersdelight 1.20.1-1.2.4
+	- fastpaintings 1.20-1.2.7
+	- ferritecore 6.0.1
+	- firstjoinmessage 3.5
+	- flan 1.20.1-1.10.4
+	- forge 47.2.0
+	- framework 0.7.6
+	- ftblibrary 2001.2.2
+	- ftbteams 2001.3.0
+	- gamemenuremovegfarb 2.1.2
+	- geckolib 4.4.6
+	- gml 4.0.9
+	- golemsarefriends 1.20.0-1.0.1
+	- hordes 1.5.3a
+	- immersive_aircraft 1.0.1+1.20.1
+	- improvedmobs 1.20.1-1.12.4
+	- incontrol 1.20-9.2.6
+	- insanelib 1.13.5
+	- jei 15.3.0.7
+	- jeresources 1.4.0.247
+	- journeymap 5.10.2
+	- k_turrets 3.0.25-1.20.1
+	- konkrete 1.8.0
+	- kotlinforforge 4.11.0
+	- letmedespawn 1.2.1
+	- lostcities 1.20-7.1.8
+	- map_atlases 1.20-6.0.7
+	- marbledsapi 1.0.7
+	- marbledsarsenal 2.2.0
+	- max_armory 1.1.2
+	- minecraft 1.20.1
+	- mobsunscreen 3.1.1
+	- moonlight 1.20-2.11.37
+	- mutantmonsters 8.0.7
+	- mutantsbuff 1.0.0
+	- no_portals 1.2.1
+	- no_ruined_nether_portals 1.0.0
+	- overworld_netherite_ore 2.3
+	- packetfixer 1.4.2
+	- pehkui 3.8.2+1.20.1-forge
+	- philipsruins 4.0
+	- pillagers_gun 1.3.0
+	- playeranimator 1.0.2-rc1+1.20
+	- pointblank 1.5.5
+	- polymorph 0.49.5+1.20.1
+		\-- spectrelib 0.13.15+1.20.1
+	- projectvibrantjourneys 1.20.1-6.0.0
+	- propertymodifier 0.3.3
+		\-- mixinextras 0.2.0-beta.8
+	- psg 4.01
+	- puzzleslib 8.1.20
+		\-- puzzlesaccessapi 8.0.7
+	- railways 1.6.4+forge-mc1.20.1
+	- rapid_leaf_decay 2.0.2
+	- regrowth 46.31.2
+	- resourcefullib 2.1.25
+	- responsiveshields 2.3
+	- satako 7.0.16-1.20.1
+	- securitycraft 1.9.10
+	- sereneseasons 9.0.0.46
+	- simpleshops 1.2.2
+	- sliceanddice 3.2.0
+	- smoothboot 0.0.4
+	- sophisticatedbackpacks 3.20.5.1044
+	- sophisticatedcore 0.6.22.611
+	- sound_physics_remastered 1.20.1-1.4.2
+	- starterkit 6.7
+	- structure_gel 2.16.2
+	- structureexpansion 2.0.1-build.11
+	- table_top_craft 1.20.1-6.1.2
+	- tacz 1.0.2
+	- tenshilib 1.20.1-1.7.6
+	- terralith 2.5.1
+	- toolbelt 1.20.01
+	- underground_bunkers 1.0.3
+	- wegotrunnners 1.0.0
+	- yungsapi 1.20-Forge-4.0.5
+[28Nov2024 23:23:24.928] [main/WARN] [mixin/]: Reference map 'packetfixer-forge-forge-refmap.json' for packetfixer-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[28Nov2024 23:23:30.452] [main/WARN] [mixin/]: Error loading class: dev/latvian/mods/kubejs/recipe/RecipesEventJS (java.lang.ClassNotFoundException: dev.latvian.mods.kubejs.recipe.RecipesEventJS)
+[28Nov2024 23:23:30.453] [main/WARN] [mixin/]: @Mixin target dev.latvian.mods.kubejs.recipe.RecipesEventJS was not found sliceanddice.mixins.json:RecipeEventJSMixin
+[28Nov2024 23:23:33.604] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.6).
+[28Nov2024 23:23:35.228] [main/INFO] [Smooth Boot (Reloaded)/]: Smooth Boot (Reloaded) config initialized
+[28Nov2024 23:23:50.445] [main/WARN] [mixin/]: @Redirect conflict. Skipping securitycraft.mixins.json:camera.ServerPlayerMixin->@Redirect::securitycraft$tick(Lnet/minecraft/server/level/ServerPlayer;DDDFF)V with priority 1100, already redirected by railways-common.mixins.json:conductor_possession.ServerPlayerMixin->@Redirect::railways$securitycraft$tick(Lnet/minecraft/server/level/ServerPlayer;DDDFF)V with priority 1200
